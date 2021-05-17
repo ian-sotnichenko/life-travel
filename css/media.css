@@ -1,0 +1,48 @@
+@media (max-width: 1024px) {
+	.menu__toggle {
+		display: block;
+	}
+
+	.form {
+		flex-wrap: wrap;
+	}
+
+	.form input {
+		width: 40%;
+		margin-bottom: 20px;
+	}
+
+	.sign_up__button {
+		width: 200px;
+	}
+
+	.request_text__mini {
+		width: 55%;
+	}
+
+	.header__logo {
+		margin-right: 40%;
+	}
+
+	.header__nav {
+		display: none;
+	}
+
+	.header__phone {
+		display: none;
+	}
+
+	.header__phone_img {
+		display: block;
+	}
+
+	.footer__block_1 {
+		width: 120px;
+	}
+
+	.footer__block_2 {
+		display: none;
+	}
+
+
+}

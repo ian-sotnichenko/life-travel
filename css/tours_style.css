@@ -1,0 +1,197 @@
+.header,
+.header_mid,
+.main,
+.footer {
+	position: relative;
+}
+
+.header {
+	background-image: url(../img/tours/bg_img.jpg);
+	background-size: cover;
+	
+	width: 100%;
+	height: 400px;
+
+	color: #fff;
+
+}
+
+.header__logo {
+	margin-right: 40%;
+}
+
+.header__nav {
+	display: none;
+}
+
+.header_mid {
+	height: 30px;
+	width: 100px;
+
+	position: absolute;
+	left: 40px;
+	top: calc(50% - 30px);
+	z-index: 10;
+}
+
+.button_back {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 120px;
+	padding: 10px 10px;
+
+	border: 0;
+	background-color: transparent;
+}
+
+.button_back:hover {
+	cursor: pointer;
+}
+
+.button_back__img {
+	height: 30px;
+}
+
+.button_back__text {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #fff;
+	font-family: 'Ulbuntu', sans-serif;
+	font-size: 16px;
+}
+
+.main {
+	top: -250px;
+}
+
+.tours_block {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.schedule,
+.main h1 {
+	color: #fff;
+}
+
+.schedule {
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	padding-bottom: 10px;
+}
+
+.main h1 {
+	line-height: 30px;
+	padding-bottom: 40px;
+}
+
+.tour {
+	width: 100%;
+	height: 250px;
+
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	display: flex;
+}
+
+.tour:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.landscape_1,
+.landscape_2,
+.landscape_3,
+.landscape_4 {
+	width: 55%;
+	background-size: cover;
+}
+
+.landscape_1 {
+	background-image: url(../img/tien-shan.jpg);
+}
+
+.landscape_2 {
+	background-image: url(../img/marocco.jpg);
+}
+
+.landscape_3 {
+	background-image: url(../img/iceland.jpg);
+}
+
+.landscape_4 {
+	background-image: url(../img/georgia.jpg);
+}
+
+.description {
+	font-size: 14px;
+	width: 45%;
+	line-height: 20px;
+}
+
+.textarea {
+	padding-left: 50px;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+
+p.olive_text {
+	color: #a6ba00;
+	font-weight: bold;
+}
+
+p.black_bold_text {
+	color: #000;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+p.gray_italic_text {
+	color: #ccc;
+	font-style: italic;
+}
+
+.price_button {
+	display: flex;
+	width: 100%;
+	height: 45px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.price {
+	height: 100%;
+	width: 40%;
+	background-color: #333;
+	color: #fff;
+}
+
+.button {
+	height: 100%;
+	width: 60%;
+	background-color: #a6ba00;
+}
+
+.button:hover {
+background-color: #97a900;
+}
+
+.button a {
+	color: #000;
+}
+
+.price p,
+.button p {
+	padding-top: 12.5px;
+}
+
+.block_request {
+	margin-bottom: -250px;
+}

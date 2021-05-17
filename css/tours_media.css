@@ -1,0 +1,18 @@
+@media (max-width: 1024px) {
+	.button_back {
+		display: none;
+	}
+
+	.landscape_1,
+	.landscape_2,
+	.landscape_3,
+	.landscape_4 {
+		width: 50%;
+	}
+
+	.description {
+		font-size: 14px;
+		width: 50%;
+		line-height: 20px;
+	}
+}

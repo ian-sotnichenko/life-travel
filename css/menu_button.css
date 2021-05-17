@@ -1,0 +1,29 @@
+.m-hamburger {
+	position: relative;
+	text-indent: -9999px;
+}
+
+.m-hamburger::before,
+.m-hamburger::after,
+.m-hamburger__label {
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
+
+.m-hamburger::before,
+.m-hamburger::after {
+	content: '';
+}
+
+.m-hamburger::before {
+	top: 0;
+}
+
+.m-hamburger::after {
+	bottom: 0;
+}
+
+.m-hamburger__label {
+	top: 50%;
+}
