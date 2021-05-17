@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Life travel/Main</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/index_style.css">
+	<link rel="stylesheet" href="css/index_media.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+</head>
+<body>
+	<div class="site">
+		<header class="header" id="top">
+			<div class="header_top">
+				<input type="checkbox" id="menu__toggle" />
+				<div class="menu__toggle">
+					<label for="menu__toggle"></label>
+					<ul class="menu">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="tours.html">Туры</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header__logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+				<div class="header__nav">
+					<ul class="nav">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="tours.html">Туры</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header__lang">
+					<a href="#" class="ru_lang">RUS</a>
+					<a href="#" class="en_lang">ENG</a>
+				</div>
+				<div class="header__phone">+375 29 123-45-67</div>
+				<a href="#" class="header__phone_img" id="phone_popup_button" ><img src="img/phone.png" alt="phone"></a>
+			</div>
+			<div class="bg__phone_popup" id="bg__phone_popup">
+				<div class="phone_popup">
+					<div class="phone_popup__text">
+						<p><span>A1</span> +375 29 123-45-67</p>
+						<p><span>МТС</span> +375 29 123-45-67</p>
+					</div>
+				</div>
+			</div>
+			<div class="header_mid">
+				<div class="header_mid__left">
+					<h1 class="header_mid__h1">Возможность<br />увидеть<br />мир!</h1>
+					<p class="header_mid__p">Групповые путешествия<br />по всему миру</p>
+				</div>
+				<div class="header_mid__right">
+					<div class="header_mid__right__group">
+						<h2 class="header_mid__h2 count">1984</h2>
+						<p class="header_mid__p_ital">человека путешествовало с нами</p>
+					</div>
+					<div class="header_mid__right__group">
+						<h2 class="header_mid__h2 count">2015</h2>
+						<p class="header_mid__p_ital">Дата основания</p>
+					</div>
+					<div class="header_mid__right__group">
+						<h2 class="header_mid__h2">0</h2>
+						<p class="header_mid__p_ital">Туров отменено</p>
+					</div>
+				</div>
+			</div>
+			<div class="header_bottom">
+				<div class="header__down_button">
+					<button class="down_button" onclick="slowScroll('#tours')"><img src="img/down-arrow.png" alt="down_arrow"></button>
+					<p class="button_text">К турам</p>
+				</div>
+				<div class="header__social">
+					<a href="#" class="vk_link"><img src="img/vk.png" alt="vk logo"></a>
+					<a href="#" class="inst_link"><img src="img/inst.png" alt="inst logo"></a>
+					<a href="#" class="fb_link"><img src="img/fb.png" alt="fb logo"></a>
+				</div>
+			</div>
+		</header>
+
+
+		<main class="main">
+			<div class="hidden_block"></div>
+			
+			<div class="popup" id="bg_popup">
+				<div class="popup_window" id="popup">
+					<a href="#" id="setCookie" onclick="document.getElementById('popup').style.display='none'; return false"><label class="popup_label" for="close_popup"></label></a>
+
+					<form action="#" class="popup_form">
+						<p class="popup_text">Оставьте Ваши данные и мы свяжемся с Вами</p>
+						<input type="text" placeholder="Ваше имя">
+						<input type="tel" placeholder="Ваш телефон">
+						<button class="popup__sign_up__button">Оставить заявку</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="block" id="tours">
+				<h2 class="main_title">Популярные туры</h2>
+				<div class="tours">
+					<div class="left_tour">
+						<div class="big_tour">
+							<div class="big_tour__img"></div>
+							<div class="big_tour__text_conteiner">
+								<div class="big_tour__text">
+									<p class="tour_date">6-14 июля</p>
+									<p class="tour_name">Путешествие на Тянь-Шань</p>
+									<p class="tour_description">Увидеть каньон<br />Плыть на каяке по высокогорному озеру<br />Забраться на высоту 3000 метров</p>
+								</div>
+								<div class="big_tour__buttons">
+									<div class="big_tour__price">
+										<p>42 600 &#8381;</p>
+									</div>
+									<a href="#">
+										<div class="big_tour__arrow">
+											<img src="img/right-arrow.png" alt="right-arrow">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="right_tour">
+						<div class="small_tour">
+							<div class="small_tour__img_first"></div>
+							<div class="small_tour__text_conteiner">
+								<div class="small_tour__text">
+									<p class="tour_date">6-14 июня</p>
+									<p class="tour_name">Путешествие в Исландию</p>
+								</div>
+								<div class="small_tour__buttons">
+									<div class="small_tour__price">
+										<p>78 300 &#8381;</p>
+									</div>
+									<a href="#">
+										<div class="small_tour__arrow">
+											<img src="img/right-arrow.png" alt="right-arrow">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="small_tour">
+							<div class="small_tour__img_second"></div>
+							<div class="small_tour__text_conteiner">
+								<div class="small_tour__text">
+									<p class="tour_date">6-14 июня</p>
+									<p class="tour_name">Путешествие в Марокко</p>
+								</div>
+								<div class="small_tour__buttons">
+									<div class="small_tour__price">
+										<p>72 800 &#8381;</p>
+									</div>
+									<a href="#">
+										<div class="small_tour__arrow">
+											<img src="img/right-arrow.png" alt="right-arrow">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block" id="about_us">
+				<h2 class="main_title">Почему стоит поехать с нами</h2>
+				<div class="preorities">
+					<div class="preor">
+						<img src="img/backpack.png" alt="backpack">
+						<p class="preor_name">Приключение</p>
+						<p class="preor_description">Делаем не просто путешествие, а приключение со своей историей</p>
+					</div>
+					<div class="preor">
+						<img src="img/bed.png" alt="bed">
+						<p class="preor_name">Комфорт</p>
+						<p class="preor_description">Уделяем большое внимание комфортному отдыху во всех смыслах</p>
+					</div>
+					<div class="preor">
+						<img src="img/bus.png" alt="bus">
+						<p class="preor_name">Трансфер</p>
+						<p class="preor_description">Используем свой собственный трансфер по всем маршрутам</p>
+					</div>
+					<div class="preor">
+						<img src="img/camp.png" alt="camp">
+						<p class="preor_name">Отели с живописными видами</p>
+						<p class="preor_description">Заселяемся в отели в локации с живописными видами</p>
+					</div>
+					<div class="preor">
+						<img src="img/cam.png" alt="cam">
+						<p class="preor_name">Фото</p>
+						<p class="preor_description">Делаем впечатляющие фотоснимки</p>
+					</div>
+					<div class="preor">
+						<img src="img/tourist.png" alt="tourist">
+						<p class="preor_name">Гиды</p>
+						<p class="preor_description">Профессиональные гиды находятся с вами 24 часа в сутки</p>
+					</div>
+				</div>
+			</div>
+				
+			<div class="block"  id="team">
+				<h2 class="main_title">Наша команда</h2>
+				<div class="team">
+					<div class="guide">
+						<div class="guide__img_first"></div>
+						<div class="guide__text_conteiner">
+							<div class="guide__text">
+								<p class="guide_pos">Сопровождающий</p>
+								<p class="guide_name">Алиса Белоус</p>
+							</div>
+							<div class="guide__social">
+								<a href="#"><img src="img/vk-full-olive.png" alt="vk icon"></a>
+								<a href="#"><img src="img/inst-full-olive.png" alt="inst icon"></a>
+							</div>
+						</div>
+					</div>
+					<div class="guide">
+						<div class="guide__img_second"></div>
+						<div class="guide__text_conteiner">
+							<div class="guide__text">
+								<p class="guide_pos">Сопровождающий</p>
+								<p class="guide_name">Кирилл Старков</p>
+							</div>
+							<div class="guide__social">
+								<a href="#"><img src="img/vk-full-olive.png" alt="vk icon"></a>
+								<a href="#"><img src="img/inst-full-olive.png" alt="inst icon"></a>
+							</div>
+						</div>
+					</div>
+					<div class="guide">
+						<div class="guide__img_third"></div>
+						<div class="guide__text_conteiner">
+							<div class="guide__text">
+								<p class="guide_pos">Сопровождающий</p>
+								<p class="guide_name">Алекс Моргунов</p>
+							</div>
+							<div class="guide__social">
+								<a href="#"><img src="img/vk-full-olive.png" alt="vk icon"></a>
+								<a href="#"><img src="img/inst-full-olive.png" alt="inst icon"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block_request" id="request_first">
+				<h2 class="main_title request_title">Оставьте заявку</h2>
+				<div class="request">
+					<p class="request_text__italic">Оставьте свои данные, мы свяжемся с вами и обсудим детали поездки</p>
+					<form action="#" class="form">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Ваш телефон">
+						<button class="sign_up__button">Оставить заявку</button>
+						<p class="request_text__mini">Нажимая кнопку "Оставить заявку" Вы соглашаетесь на обработку персональных данных</p>
+					</form>
+				</div>
+			</div>
+
+			<div class="block" id="review">
+				<h2 class="main_title">"Эмоции людей, которые<br />отправились с нами"</h2>
+				<div class="review">
+					<div class="review_container">
+						<div class="review_top">
+							<img src="img/review_pers2.png" alt="person">
+							<div class="review_title">
+								<p class="review_name">Юлия Устинова</p>
+								<p class="review_place">Путешествие в Марокко</p>
+								<div class="reviw_social">
+									<a href="#"><img src="img/vk-full-olive.png" alt="vk icon"></a>
+									<a href="#"><img src="img/inst-full-olive.png" alt="inst icon"></a>
+								</div>
+							</div>
+						</div>
+						<div class="review_bottom">
+							<p>"Из года в год путешествия с вами становятся все ярче, а расстования все сентиментальнее - беспощадно отрывается частичка моей души...<br />Эти 10 дней я запомню на всю жизнь! Ценю каждый момент:)"</p>
+						</div>
+					</div>
+					<div class="review_container">
+						<div class="review_top">
+							<img src="img/review_pers1.png" alt="person">
+							<div class="review_title">
+								<p class="review_name">Анна Туйгунова</p>
+								<p class="review_place">Путешествие в Грузию</p>
+								<div class="reviw_social">
+									<a href="#"><img src="img/vk-full-olive.png" alt="vk icon"></a>
+									<a href="#"><img src="img/inst-full-olive.png" alt="inst icon"></a>
+								</div>
+							</div>
+						</div>
+						<div class="review_bottom">
+							<p>"Все ребята сделали мой отдых незабываемым! Такое больше не повторится, нужно наслаждаться тем, что происходит сейчас.<br />Спасибо, я реально наслаждалась все эти две недели рядом с вами! Вы в моем сердце..."</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block"  id="qa">
+				<div class="qa">
+					<div class="left_qa_container">
+						<h2 class="qa_main_title">Часто задаваемые вопросы</h2>
+						<p class="qa_text">Если вы не нашли ответ на свой вопрос, оставьте заявку и мы обязательно свяжемся с вами в ближайшее время</p>
+						<button class="big_sign_up__button">Оставить заявку</button>
+					</div>
+					<div class="right_qa_container">
+						<div class="accordion">
+							<ul class="accordion_container">
+								<li class="accordion_block">
+									<input type="checkbox" name="checkbox" checked>
+									<i></i>
+									<h2 class="accord_title">Сумма за тур указана за одного человека?</h2>
+									<p class="accord_text">Да. Сумма за тур указана за одного человека.</p>
+								</li>
+								<li class="accordion_block">
+									<input type="checkbox" name="checkbox" checked>
+									<i></i>
+									<h2 class="accord_title">Авиаперелет входит в стоимость тура?</h2>
+									<p class="accord_text">Все цены за путешествия указаны без учета стоимости за авиаперелет, но мы помогаем найти подходящие авиабилеты с использованием профессиональных ресурсов.</p>
+								</li>
+								<li class="accordion_block">
+									<input type="checkbox" name="checkbox" checked>
+									<i></i>
+									<h2 class="accord_title">С кем я буду проживать, если еду один?</h2>
+									<p class="accord_text">Для каждого человека/пары/семьи снимается отдельный номер.</p>
+								</li>
+								<li class="accordion_block">
+									<input type="checkbox" name="checkbox" checked>
+									<i></i>
+									<h2 class="accord_title">Оформление визы входит в стоимость?</h2>
+									<p class="accord_text">Все цены за путешествия указаны без учета стоимости визы, но мы помогаем сделать ее с использованием профессиональных ресурсов.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block_request" id="request_second">
+				<h2 class="main_title request_title">Оставьте заявку</h2>
+				<div class="request">
+					<p class="request_text__italic">Оставьте свои данные, мы свяжемся с вами и обсудим детали поездки</p>
+					<form action="#" class="form">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Ваш телефон">
+						<button class="sign_up__button">Оставить заявку</button>
+						<p class="request_text__mini">Нажимая кнопку "Оставить заявку" Вы соглашаетесь на обработку персональных данных</p>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer" id="contacts">
+			<div class="footer_container">
+				<div class="footer__block_1">
+					<a href="index.html"><img class= "footer_logo" src="img/logo.png" alt="logo"></a>
+					<p class="rights">&copy; 2019 LifeTravel all rights reserved</p>
+				</div>
+				<div class="footer__block_2">
+					<div class="footer__navigation">
+						<ul class="footer__nav">
+							<li><a href="javascript://0" onclick="slowScroll('#top')">Главная</a></li>
+							<li><a href="tours.html">Туры</a></li>
+							<li><a href="javascript://0" onclick="slowScroll('#about_us')">О нас</a></li>
+							<li><a href="javascript://0" onclick="slowScroll('#review')">Отзывы</a></li>
+							<li><a href="javascript://0" onclick="slowScroll('#contacts')">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__block_3">
+					<p>+375 29 123-45-67<br />
+					info@lifetravelgroup.by<br />
+					г.Минск, площадь Свободы, 23,<br />
+					2 этаж, офис 63</p>
+				</div>
+				<div class="footer__block_4">
+					<p>Социальные сети</p>
+					<div class="footer__social_links">
+						<a href="#"><img src="img/vk-full-olive.png" alt="vk"></a>
+						<a href="#"><img src="img/inst-full-olive.png" alt="instagram"></a>
+						<a href="#"><img src="img/fb-full-olive.png" alt="facebook"></a>
+					</div>
+				</div>
+				<div class="footer__block_5">
+					<button class="button_up" onclick="slowScroll('#top')">&uarr;</button>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/script.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/popup.js"></script>
+</body>
+</html>

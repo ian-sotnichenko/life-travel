@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LifeTravel/Tours</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/tours_style.css">
+	<link rel="stylesheet" href="css/tours_media.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="site">
+
+		<header class="header" id="top">
+			<div class="header_top">
+				<input type="checkbox" id="menu__toggle" />
+				<div class="menu__toggle">
+					<label for="menu__toggle"></label>
+					<ul class="menu">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="tours.html">Туры</a></li>
+						<li><a href="index.html">О нас</a></li>
+						<li><a href="index.html">Отзывы</a></li>
+						<li><a href="index.html" onclick="slowScroll('#contacts')">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header__logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+				<div class="header__nav">
+					<ul class="nav">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="tours.html">Туры</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header__lang">
+					<a href="#" class="ru_lang">RUS</a>
+					<a href="#" class="en_lang">ENG</a>
+				</div>
+				<div class="header__phone">+375 29 123-45-67</div>
+			</div>
+			<div class="header_mid">
+				<a href="index.html">
+					<button class="button_back">
+						<img class="button_back__img" src="img/arrow_back.png" alt="back">
+						<p class="button_back__text">Назад</p>
+					</button>
+				</a>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="tours_block">
+				<p class="schedule">расписание</p>
+				<h1>Ближайшие путешествия</h1>
+				<div class="tour">
+					<div class="landscape_1"></div>
+					<div class="description">
+						<div class="textarea">
+							<p class="olive_text">6-14 сентября</p>
+							<p class="black_bold_text">Путешествие на Тянь-Шань</p>
+							<p class="gray_italic_text">
+								Увидеть каньон<br />
+								Плыть на ваяке по высокогорному озеру<br />
+								Забраться на высоту 3000 метров
+							</p>
+						</div>
+						<div class="price_button">
+							<div class="price"><p>42 500 &#8381;</p></div>
+							<div class="button" onclick="slowScroll('#request')"><a href="#"><p>Оставить заявку</p></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="tour">
+					<div class="landscape_2"></div>
+					<div class="description">
+						<div class="textarea">
+							<p class="olive_text">21-29 сентября</p>
+							<p class="black_bold_text">Путешествие в Марокко</p>
+							<p class="gray_italic_text">
+								Насладиться Атлантическим океаном<br />
+								Встретить рассвет в пустыне Сахара<br />
+								Прогуляться по древним медианам
+							</p>
+						</div>
+						<div class="price_button">
+							<div class="price"><p>94 800 &#8381;</p></div>
+							<div class="button" onclick="slowScroll('#request')"><a href="#"><p>Оставить заявку</p></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="tour">
+					<div class="landscape_3"></div>
+					<div class="description">
+						<div class="textarea">
+							<p class="olive_text">10-20 октября</p>
+							<p class="black_bold_text">Путешествие в Исландию</p>
+							<p class="gray_italic_text">
+								Ступить на землю вулканов<br />
+								Увидеть синего кита<br />
+								Побывать на другой планете
+							</p>
+						</div>
+						<div class="price_button">
+							<div class="price"><p>94 800 &#8381;</p></div>
+							<div class="button" onclick="slowScroll('#request')"><a href="#"><p>Оставить заявку</p></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="tour">
+					<div class="landscape_4"></div>
+					<div class="description">
+						<div class="textarea">
+							<p class="olive_text">16-24 октября</p>
+							<p class="black_bold_text">Путешествие в Грузию</p>
+							<p class="gray_italic_text">
+								Насладиться горным воздухом<br />
+								Увидеть искреннее гостеприимство<br />
+								Попробовать грузинскую кухню
+							</p>
+						</div>
+						<div class="price_button">
+							<div class="price"><p>45 900 &#8381;</p></div>
+							<div class="button" onclick="slowScroll('#request')"><a href="#"><p>Оставить заявку</p></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block_request" id="request">
+				<h2 class="main_title request_title">Оставьте заявку</h2>
+				<div class="request">
+					<p class="request_text__italic">Оставьте свои данные, мы свяжемся с вами и обсудим детали поездки</p>
+					<form action="" class="form">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Ваш телефон">
+						<button class="sign_up__button">Оставить заявку</button>
+						<p class="request_text__mini">Нажимая кнопку "Оставить заявку" Вы соглашаетесь<br />на обработку персональных данных</p>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer_container">
+				<div class="footer__block_1">
+					<a href="index.html"><img class= "footer_logo" src="img/logo.png" alt="logo"></a>
+					<p class="rights">&copy; 2019 LifeTravel all rights reserved</p>
+				</div>
+				<div class="footer__block_2">
+					<div class="footer__navigation">
+						<ul class="footer__nav">
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="tours.html">Туры</a></li>
+							<li><a href="#">О Нас</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__block_3">
+					<p>+375 29 123-45-67<br />
+					info@lifetravelgroup.by<br />
+					г.Минск, площадь Свободы, 23,<br />
+					2 этаж, офис 63</p>
+				</div>
+				<div class="footer__block_4">
+					<p>Социальные сети</p>
+					<div class="footer__social_links">
+						<a href="#"><img src="img/vk-full-olive.png" alt="vk"></a>
+						<a href="#"><img src="img/inst-full-olive.png" alt="instagram"></a>
+						<a href="#"><img src="img/fb-full-olive.png" alt="facebook"></a>
+					</div>
+				</div>
+				<div class="footer__block_5">
+					<button class="button_up" onclick="slowScroll('#top')">&uarr;</button>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+	<script src="js/tours_scroll.js"></script>
+</body>
+</html>
